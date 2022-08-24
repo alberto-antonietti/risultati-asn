@@ -10,6 +10,9 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+      
+      - name: pull
+        run: git pull origin main
 
       - name: Fetch results
         run: ./fetch.php
